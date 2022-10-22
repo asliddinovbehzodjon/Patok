@@ -1,5 +1,4 @@
 from django.shortcuts import render
-# Create your views here.
 from rest_framework.viewsets import ModelViewSet
 from .models import *
 from .serializer import *
@@ -9,3 +8,6 @@ class WorkViewset(ModelViewSet):
 class WorkerViewset(ModelViewSet):
     queryset = Worker.objects.all()
     serializer_class = WorkerSerializer
+class AnotherViewset(ModelViewSet):
+    queryset = Another.objects.all()
+    serializer_class = AnotherSerializer

@@ -17,3 +17,4 @@ class WorkAdmin(ImportExportModelAdmin):
     list_per_page = 10
     search_fields = ['company','salary','addess','job']
 # Register your models here.
+admin.site.register(Another)

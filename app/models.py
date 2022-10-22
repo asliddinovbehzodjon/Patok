@@ -37,3 +37,10 @@ class TelegramBotUser(models.Model):
     telegram_id = models.CharField(max_length=500,verbose_name="Telegram ID")
     language = models.CharField(max_length=10,default='uz',verbose_name='System Language')
 
+class Another(models.Model):
+    title = models.TextField(verbose_name="Title",help_text="Enter title")
+    description = models.TextField(verbose_name="Description",help_text="Enter description")
+    price = models.CharField(max_length=6000)
+    connect = models.TextField()
+    def __str__(self):
+        return self.title

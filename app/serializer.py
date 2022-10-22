@@ -8,3 +8,7 @@ class WorkerSerializer(serializers.ModelSerializer):
     class Meta:
         model = Worker
         fields = "__all__"
+class AnotherSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Another
+        fields = "__all__"
